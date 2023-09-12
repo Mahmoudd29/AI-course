@@ -1,0 +1,146 @@
+
+task1 
+what is recursion, tabulation, memoization 
+
+Recursion, tabulation, and memoization are techniques commonly used in computer science and programming to solve problems efficiently, particularly in the context of dynamic programming and optimizing recursive algorithms. Here's a brief explanation of each:
+
+1. Recursion:
+Recursion is a programming technique where a function calls itself to solve a smaller or simpler version of the same problem. It involves breaking down a complex problem into smaller, more manageable subproblems until a base case is reached. The base case represents the simplest form of the problem that can be directly solved. Recursive functions have two main components: the base case(s) and the recursive case(s). The base case(s) defines the termination condition, while the recursive case(s) define how the problem is broken down and the function is called recursively. Recursion is a powerful tool but should be used carefully to avoid infinite loops and unnecessary computation.
+
+2. Tabulation:
+Tabulation is a bottom-up dynamic programming technique used to solve problems by iteratively filling a table or an array. In tabulation, the solutions to smaller subproblems are computed and stored in a table, which is then used to derive the solution to the larger problem. Tabulation usually involves defining a table or an array of appropriate size and initializing it with base case values. Then, using iterative loops, the table is filled by calculating and storing solutions to subproblems in a systematic manner until the final solution is obtained. Tabulation is typically efficient and avoids the overhead of function call stack associated with recursion.
+
+3. Memoization:
+Memoization is a top-down dynamic programming technique used to optimize recursive algorithms by caching (or memorizing) the results of function calls for specific inputs. It involves adding a caching mechanism to a recursive function to store the results of expensive function calls, such that if the same function is called again with the same inputs, the cached result can be returned directly instead of recomputing it. By memoizing intermediate results, the overall efficiency of the algorithm is improved. Memoization can be implemented using data structures like dictionaries, maps, or arrays to store the computed results and check for existing values before performing any expensive computations.
+
+Both tabulation and memoization are techniques used to optimize dynamic programming solutions, but they differ in their approach. Tabulation uses an iterative bottom-up approach, whereas memoization uses a recursive top-down approach with caching.
+
+It's important to note that the choice between recursion, tabulation, or memoization depends on the problem at hand and the trade-offs between time complexity, space complexity, and simplicity of implementation.
+
+task 2 
+processors of iphone
+
+
+1. iPhone (original): The original iPhone, released in 2007, used the Samsung S5L8900 processor.
+
+2. iPhone 3G: The iPhone 3G, released in 2008, used the Samsung S5L8720 processor.
+
+3. iPhone 3GS: The iPhone 3GS, released in 2009, used the Samsung S5PC100 processor.
+
+4. iPhone 4: The iPhone 4, released in 2010, used the Apple A4 processor.
+
+5. iPhone 4S: The iPhone 4S, released in 2011, used the Apple A5 processor.
+
+6. iPhone 5: The iPhone 5, released in 2012, used the Apple A6 processor.
+
+7. iPhone 5C: The iPhone 5C, released in 2013, used the Apple A6 processor.
+
+8. iPhone 5S: The iPhone 5S, released in 2013, used the Apple A7 processor.
+
+9. iPhone 6 and iPhone 6 Plus: The iPhone 6 and 6 Plus, released in 2014, used the Apple A8 processor.
+
+10. iPhone 6S and iPhone 6S Plus: The iPhone 6S and 6S Plus, released in 2015, used the Apple A9 processor.
+
+11. iPhone SE (1st generation): The iPhone SE (1st generation), released in 2016, used the Apple A9 processor.
+
+12. iPhone 7 and iPhone 7 Plus: The iPhone 7 and 7 Plus, released in 2016, used the Apple A10 Fusion processor.
+
+13. iPhone 8 and iPhone 8 Plus: The iPhone 8 and 8 Plus, released in 2017, used the Apple A11 Bionic processor.
+
+14. iPhone X: The iPhone X, released in 2017, used the Apple A11 Bionic processor.
+
+15. iPhone XR, iPhone XS, and iPhone XS Max: The iPhone XR, XS, and XS Max, released in 2018, used the Apple A12 Bionic processor.
+
+16. iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max: The iPhone 11 series, released in 2019, used the Apple A13 Bionic processor.
+
+17. iPhone SE (2nd generation): The iPhone SE (2nd generation), released in 2020, used the Apple A13 Bionic processor.
+
+18. iPhone 12, iPhone 12 mini, iPhone 12 Pro, and iPhone 12 Pro Max: The iPhone 12 series, released in 2020, used the Apple A14 Bionic processor.
+
+19. iphone 13 pro released in 2021 used Apple A15 Bionic processor
+
+20. iphone 14 pro released in 2022 usesd Apple A16 Bionic
+
+
+task3 
+what is the solid principle
+
+The SOLID principles are a set of five design principles in object-oriented programming that aim to make software systems more maintainable, flexible, and scalable. The SOLID principles were introduced by Robert C. Martin (also known as Uncle Bob) and have become widely adopted guidelines for designing robust and maintainable code. Here's a brief overview of each SOLID principle:
+
+1. Single Responsibility Principle (SRP):
+The SRP states that a class should have only one reason to change. It emphasizes that a class should have a single responsibility or job and should encapsulate that responsibility. By adhering to this principle, a class becomes more focused, easier to understand, and less prone to changes due to unrelated requirements.
+
+2. Open-Closed Principle (OCP):
+The OCP states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. It promotes designing systems in a way that allows new functionality to be added through extension rather than modifying existing code. This principle encourages the use of abstractions, interfaces, and inheritance to enable flexibility and avoid making changes to existing, tested code.
+
+3. Liskov Substitution Principle (LSP):
+The LSP states that subtypes should be substitutable for their base types without affecting the correctness of the program. In other words, if a class is a subtype of another class, it should be able to be used in place of its base class without causing any issues or violating expected behavior. Adhering to this principle ensures that objects can be used interchangeably, promoting polymorphism and enabling code reuse.
+
+4. Interface Segregation Principle (ISP):
+The ISP states that clients should not be forced to depend on interfaces they do not use. It emphasizes creating fine-grained interfaces that are specific to the needs of the clients that use them, rather than having large, monolithic interfaces. This principle helps prevent clients from being burdened with unnecessary dependencies and reduces the impact of changes to interfaces.
+
+5. Dependency Inversion Principle (DIP):
+The DIP states that high-level modules/classes should not depend on low-level modules/classes directly. Instead, both should depend on abstractions. It promotes decoupling between components by introducing abstractions and relying on dependency injection to provide concrete implementations. By depending on abstractions, systems become more modular, flexible, and easier to test and maintain.
+
+The SOLID principles are intended to guide developers in writing clean, maintainable, and extensible code. They promote loose coupling, high cohesion, and the use of abstractions, resulting in software systems that are easier to understand, modify, and extend over time.
+
+task 4 
+cron jobs
+
+Cron jobs are a feature found in Unix-like operating systems that allows users to schedule and automate recurring tasks or commands. A cron job is a time-based job scheduler that runs specified commands or scripts at predefined intervals. It is commonly used for tasks such as system maintenance, backups, data processing, and running periodic scripts.
+
+Here are some key points to understand about cron jobs:
+
+1. Cron Tab: The cron system uses a configuration file called the "cron tab" to manage scheduled jobs. Each user on the system can have their own cron tab, which contains entries specifying the commands or scripts to be executed and the schedule at which they should run.
+
+2. Cron Schedule: The schedule for a cron job is defined using a combination of time and date fields. The schedule is set using the following fields: minute (0-59), hour (0-23), day of the month (1-31), month (1-12), day of the week (0-7, where both 0 and 7 represent Sunday). Wildcards, ranges, and special characters (such as */2 for every other or */5 for every fifth) can be used to define flexible schedules.
+
+3. Crontab Command: The `crontab` command is used to manage cron jobs. It allows users to view, edit, add, or remove cron job entries in their individual cron tabs. The `crontab -e` command opens the cron tab file in an editor for editing. Other commands like `crontab -l` (list jobs) and `crontab -r` (remove all jobs) are also commonly used.
+
+4. Logging: By default, the output of a cron job (both standard output and standard error) is sent via email to the user who owns the cron job. It is a good practice to redirect the output of cron jobs to a log file or use appropriate redirection to handle the output effectively.
+
+5. System Cron Jobs: In addition to user-specific cron jobs, system-wide cron jobs can be defined in system directories like `/etc/cron.d` and `/etc/cron.daily`. These system cron jobs are typically used for administrative tasks or tasks that need to be executed by the system itself.
+
+Cron jobs provide a convenient way to automate recurring tasks and maintain a system or execute scripts at specified intervals. They are widely used in Unix-like systems and have become a standard tool for scheduling and automating routine jobs.
+
+
+task 6 
+difference between loc vs iloc
+
+The main difference between `loc` and `iloc` in pandas is the way they handle indexing and selecting data from a DataFrame.
+
+`loc` is used for label-based indexing, which means it selects data based on the row and column labels. It takes two arguments: the row label(s) and column label(s) you want to select. The syntax for using `loc` is `df.loc[row_labels, column_labels]`. The labels can be single values, lists, slices, or boolean masks.
+
+Example usage of `loc`:
+```python
+import pandas as pd
+
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})
+print(df.loc[0])  # Selects the first row
+print(df.loc[:, 'B'])  # Selects the 'B' column
+print(df.loc[0:1, 'A':'B'])  # Selects a subset of rows and columns
+```
+
+On the other hand, `iloc` is used for integer-based indexing, which means it selects data based on the integer position of the rows and columns. It also takes two arguments: the integer-based row index(es) and column index(es) you want to select. The syntax for using `iloc` is `df.iloc[row_indices, column_indices]`. The indices can be single integers, lists, slices, or boolean masks.
+
+Example usage of `iloc`:
+```python
+import pandas as pd
+
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})
+print(df.iloc[0])  # Selects the first row
+print(df.iloc[:, 1])  # Selects the second column
+print(df.iloc[0:2, 0:2])  # Selects a subset of rows and columns
+```
+
+To summarize:
+- `loc` uses label-based indexing, referencing the row and column labels.
+- `iloc` uses integer-based indexing, referencing the integer positions of the rows and columns.
+
+Both `loc` and `iloc` are powerful methods for indexing and selecting data in a DataFrame, and the choice between them depends on whether you want to use label-based or integer-based indexing.
+
+
+
+
+
+

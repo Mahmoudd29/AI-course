@@ -1,0 +1,74 @@
+Task 1 can you change from any data type to another in python
+
+Python provides built-in functions and methods to convert data from one type to another. Here are some examples:
+
+int(): Converts a value to an integer.
+float(): Converts a value to a floating-point number.
+str(): Converts a value to a string.
+bool(): Converts a value to a Boolean (True or False).
+list(): Converts an iterable or sequence to a list.
+tuple(): Converts an iterable or sequence to a tuple.
+set(): Converts an iterable or sequence to a set.
+dict(): Converts an iterable of key-value pairs or a sequence of tuples to a dictionary.
+string cant be integer
+
+
+Task 2 differnece between right and left shift 
+
+Right shift: The right shift operator (>>) shifts the bits of a number to the right by a specified number of positions. It effectively divides an integer by 2 raised to the power of the specified shift count. The rightmost bits are discarded, and the leftmost bits are filled with the sign bit (the most significant bit) to maintain the sign of the number.
+example:
+num = 16  # Binary: 00010000
+result = num >> 2  # Shifts 2 positions to the right
+print(result)  # Output: 4  (Binary: 00000100)
+
+
+Left shift: The left shift operator (<<) shifts the bits of a number to the left by a specified number of positions. It effectively multiplies an integer by 2 raised to the power of the specified shift count. The rightmost bits are filled with zeroes, and the leftmost bits that are shifted out are discarded.
+example:
+num = 2  # Binary: 00000010
+result = num << 3  # Shifts 3 positions to the left
+print(result)  # Output: 16  (Binary: 00010000)
+
+Task 3 how to skip an item in a list
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+step = 3
+
+new_list = my_list[::step]
+print(new_list) #Output: [1, 4, 7, 10]
+​
+
+
+Task 4 coding assignment
+
+7)
+x = int(input("Enter a year"))
+if x % 4 == 0:
+    print("This is a leap year")
+else:
+    print("This is not a leap year")
+
+
+8)
+x=int(input("Enter Age 1 \n"))
+y=int(input("Enter Age 2 \n"))
+z=int(input("Enter Age 3 \n"))
+if x>y and x>z:
+    print(x)
+elif y>x and y>z:
+    print(y)
+elif z>x and z>y:
+    print(z)
+if x<y and x<z:
+    print(x)
+elif y<x and y<z:
+    print(y)
+elif z<x and z<y:
+    print(z)
+
+
+
+
+
+
+
+codeforces

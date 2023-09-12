@@ -1,0 +1,98 @@
+Task 1 
+What are the types distributions (expo, uniform, ......)\
+
+There are several commonly used probability distributions in statistics and probability theory. Here are some of the most well-known types of probability distributions:
+
+1. Uniform Distribution: A uniform distribution is characterized by constant probability over a specified range. It is often represented by a rectangular-shaped probability density function. Every outcome within the range has an equal chance of occurring.
+
+2. Normal (Gaussian) Distribution: The normal distribution is a bell-shaped distribution that is symmetric around the mean. It is widely used in many fields and is characterized by its mean and standard deviation. Many natural phenomena follow a normal distribution, such as height, weight, and IQ scores.
+
+3. Exponential Distribution: The exponential distribution is often used to model the time between events in a Poisson process. It has a constant hazard rate and is commonly used to describe the decay or lifespan of certain phenomena, such as radioactive decay or the time between customer arrivals in a queue.
+
+4. Poisson Distribution: The Poisson distribution is used to model the number of events occurring within a fixed interval of time or space when the events occur with a known constant rate and are independent of each other. It is often used to model rare events, such as the number of customer arrivals at a service counter or the number of emails received per day.
+
+5. Binomial Distribution: The binomial distribution describes the number of successes in a fixed number of independent Bernoulli trials, where each trial has the same probability of success. It is often used to model binary outcomes, such as the probability of heads or tails in multiple coin flips.
+
+6. Gamma Distribution: The gamma distribution is a continuous probability distribution that generalizes the exponential distribution. It is commonly used to model waiting times, survival analysis, and the shape of skewed data.
+
+7. Beta Distribution: The beta distribution is a continuous probability distribution defined on the interval [0, 1]. It is often used as a prior distribution for the probability of success in Bayesian analysis or to model proportions and probabilities.
+
+These are just a few examples of probability distributions commonly used in various fields. Each distribution has its own characteristics and applications, and the choice of distribution depends on the nature of the data and the problem at hand.
+
+
+Task 2
+how to change any distribution to normal distribution(center limit theory)
+
+To change any distribution to a normal distribution, you can use a statistical technique called transformation. The general idea is to apply a mathematical transformation to the original data so that it conforms to a normal distribution. Here are a few commonly used transformation methods:
+
+1. Logarithmic Transformation: Taking the logarithm of the data can often help normalize skewed distributions. This transformation is useful when the data is positively skewed, as it compresses the larger values and expands the smaller values, bringing the distribution closer to normal.
+
+2. Square Root Transformation: The square root transformation is effective for distributions with right-skewness, where the majority of the values are concentrated on the left side. It compresses the larger values while expanding the smaller ones, resulting in a more symmetrical distribution.
+
+3. Box-Cox Transformation: The Box-Cox transformation is a power transformation that aims to stabilize the variance and normalize the data. It involves calculating a lambda parameter to determine the optimal power transformation for the given data. This technique is flexible and can handle a range of distributions.
+
+4. Quantile Transformation: The quantile transformation involves mapping the data to follow a specified probability distribution, such as the normal distribution. It calculates the quantiles of the original data and replaces them with the quantiles of the desired distribution. This method can be particularly useful when you have a specific target distribution in mind.
+
+5. Johnson Transformation: The Johnson transformation is a flexible approach that can transform data to closely approximate a normal distribution by using a variety of distribution families, including the normal, log-normal, and others. It utilizes the concept of quantiles to find the appropriate transformation.
+
+It's important to note that not all distributions can be perfectly transformed into a normal distribution. Some distributions may have inherent characteristics that cannot be fully corrected through transformation. Additionally, the choice of transformation method depends on the specific data and the goals of the analysis. It is often recommended to visually assess the data before and after transformation to evaluate the effectiveness of the transformation and its impact on the underlying assumptions of the statistical analysis.
+
+
+Task 3
+types of statistical tests
+
+There are various types of statistical tests that are used to analyze and draw conclusions from data. The choice of statistical test depends on the research question, the type of data, and the assumptions made about the data. Here are some commonly used types of statistical tests:
+
+1. T-Test: The t-test is used to compare the means of two groups to determine if there is a statistically significant difference between them. It is typically used when the data follows a normal distribution and the variances of the two groups are assumed to be equal (independent t-test) or unequal (Welch's t-test).
+
+2. ANOVA (Analysis of Variance): ANOVA is used to compare means among three or more groups. It assesses whether there are statistically significant differences in means across the groups. It assumes that the data follows a normal distribution and that the variances are approximately equal.
+
+3. Chi-Square Test: The chi-square test is used to examine the association between categorical variables. It determines if there is a statistically significant relationship between two categorical variables by comparing the observed frequencies with the expected frequencies. It is commonly used for analyzing contingency tables.
+
+4. Regression Analysis: Regression analysis is used to examine the relationship between a dependent variable and one or more independent variables. It helps to identify the strength and significance of the relationship and allows for prediction and understanding of the impact of independent variables on the dependent variable.
+
+5. Correlation Analysis: Correlation analysis is used to assess the strength and direction of the relationship between two continuous variables. It measures the degree to which the variables are linearly related and provides a correlation coefficient, such as Pearson's correlation coefficient, to quantify the relationship.
+
+6. Mann-Whitney U Test: The Mann-Whitney U test, also known as the Wilcoxon rank-sum test, is a non-parametric test used to compare two independent groups when the data are not normally distributed. It assesses whether there is a significant difference in medians between the two groups.
+
+7. Kruskal-Wallis Test: The Kruskal-Wallis test is a non-parametric alternative to ANOVA. It is used to compare three or more independent groups when the data are not normally distributed. It assesses whether there are significant differences in medians across the groups.
+
+8. Wilcoxon Signed-Rank Test: The Wilcoxon signed-rank test is used to compare two related groups or to compare the median of a single group to a known value when the data are not normally distributed. It assesses whether there is a significant difference between paired observations.
+
+These are just a few examples of statistical tests commonly used in data analysis. There are many more tests available, each designed to address specific research questions and data characteristics. It is important to choose the appropriate statistical test based on the nature of the data and the research objectives.
+
+
+
+
+Task 4 OOP
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def calculate_salary(self):
+        return self.salary
+
+
+class Manager(Employee):
+    def __init__(self, name, salary, bonus):
+        super().__init__(name, salary)
+        self.bonus = bonus
+
+    def calculate_salary(self):
+        total_salary = super().calculate_salary() + self.bonus
+        return total_salary
+
+
+# Create an Employee object
+employee1 = Employee("John", 5000)
+print("Employee Details")
+print("Name:", employee1.name)
+print("Salary:", employee1.calculate_salary())
+
+# Create a Manager object
+manager1 = Manager("Jane", 7000, 2000)
+print("\nManager Details")
+print("Name:", manager1.name)
+print("Salary:", manager1.calculate_salary())

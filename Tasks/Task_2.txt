@@ -1,0 +1,30 @@
+Task 1 what ? when? How? why? Where? Devops
+
+DevOps is a set of practices that combines software development (Dev) and information technology operations (Ops) to improve collaboration, efficiency, and quality throughout the software development lifecycle. It aims to bridge the gap between development and operations teams, enabling faster and more reliable software delivery.
+
+The "what" of DevOps refers to the practices, principles, and cultural aspects that promote collaboration, automation, continuous integration, continuous delivery, and continuous monitoring. DevOps emphasizes the importance of breaking down silos between development and operations teams and fostering a culture of shared responsibility.
+
+The "why" of DevOps is driven by the need for organizations to deliver software more rapidly and reliably in today's fast-paced and competitive market. By adopting DevOps practices, teams can achieve shorter development cycles, faster time-to-market, improved software quality, and enhanced customer satisfaction.
+
+The "where" of DevOps is applicable across various industries and organizations, including startups, small and medium-sized enterprises (SMEs), and large enterprises. It is not limited to any specific industry or sector but can be implemented wherever software development and deployment are involved.
+
+The "when" of DevOps can vary depending on an organization's specific needs and circumstances. DevOps is most effective when implemented early in the software development process, as it allows teams to build a culture of collaboration and automation from the beginning. However, DevOps can also be adopted at any stage of the software development lifecycle, and organizations can gradually introduce DevOps practices over time.
+
+The "how" of DevOps involves a combination of technical and cultural aspects. Technically, DevOps relies on automation tools, continuous integration/continuous delivery (CI/CD) pipelines, infrastructure-as-code (IaC), configuration management, and monitoring solutions. Culturally, DevOps emphasizes communication, collaboration, and shared responsibility among development, operations, and other stakeholders.
+
+Implementing DevOps requires a commitment to change, continuous learning, and a focus on automation and collaboration. It involves breaking down organizational barriers, adopting new tools and technologies, and fostering a culture of experimentation and continuous improvement.
+
+Overall, DevOps is a holistic approach that aims to align software development and operations to deliver high-quality software more efficiently, enabling organizations to respond to market demands more effectively.
+
+
+import re
+
+def search_emails(text):
+    pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b'
+    emails = re.findall(pattern, text)
+    return emails
+
+# Example usage
+text = "Please contact me at john@example.com for further information."
+emails_found = search_emails(text)
+print(emails_found)

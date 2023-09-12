@@ -1,0 +1,39 @@
+task how to combine more than 2 df
+
+To combine more than two DataFrames at the same time, you can use the pandas `concat()` function. The `concat()` function allows you to concatenate multiple DataFrames either vertically (along rows) or horizontally (along columns).
+
+Here's how you can do it:
+
+```python
+import pandas as pd
+
+# Assuming you have multiple DataFrames named df1, df2, df3, etc.
+# Replace these with your actual DataFrame names
+
+# Combine multiple DataFrames vertically (along rows)
+combined_df = pd.concat([df1, df2, df3, ...], axis=0)
+
+# Combine multiple DataFrames horizontally (along columns)
+combined_df = pd.concat([df1, df2, df3, ...], axis=1)
+```
+
+In the above code, replace `df1`, `df2`, `df3`, etc., with the actual DataFrame names you want to combine. The `pd.concat()` function takes a list of DataFrames as the first argument and combines them either vertically (along rows) or horizontally (along columns) based on the `axis` parameter.
+
+- To combine DataFrames vertically (along rows), set `axis=0`.
+- To combine DataFrames horizontally (along columns), set `axis=1`.
+
+Make sure that the column names and data types align properly when combining horizontally. If the column names don't match exactly across DataFrames, you can use the `join` parameter to specify the type of join operation you want to perform.
+
+Here's an example of combining DataFrames horizontally:
+
+```python
+import pandas as pd
+
+# Assuming you have multiple DataFrames named df1, df2, df3, etc.
+# Replace these with your actual DataFrame names
+
+# Combine multiple DataFrames horizontally (along columns)
+combined_df = pd.concat([df1, df2, df3], axis=1)
+```
+
+By using `pd.concat()` with the appropriate `axis` parameter, you can easily combine more than two DataFrames at the same time, whether vertically or horizontally.
